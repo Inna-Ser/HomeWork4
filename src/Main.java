@@ -15,7 +15,7 @@ public class Main {
         if (age1 >= 18 && age1 < 24) {
             System.out.println("Человек уже закончил школу и может отправляться в университет.");
         }
-        if (age1 >= 24) {
+        else {
             System.out.println("Человек окончил университет и ему пора искать первую работу.");
         }
         System.out.println("Exercise3");

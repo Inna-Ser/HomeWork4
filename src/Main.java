@@ -18,5 +18,22 @@ public class Main {
         if (age1 >= 24) {
             System.out.println("Человек окончил университет и ему пора искать первую работу.");
         }
+        System.out.println("Exercise3");
+        int trafficWagon = 120;
+        int sitTrWagon = 60;
+        int saleSitPlace = 15;
+        int saleStayPlace = 65;
+        if (saleSitPlace >= 60 && saleStayPlace >= trafficWagon - sitTrWagon) {
+            System.out.println("В вагоне нет сободных мест.");
+        }
+        if (saleSitPlace < 60 && saleStayPlace < trafficWagon - sitTrWagon) {
+            System.out.println("В вагоне есть " + (sitTrWagon - saleSitPlace) + " сидячих мест, " + ((trafficWagon - sitTrWagon) - saleStayPlace) + " стоячих мест.");
+        }
+        if (saleSitPlace >= 60 && saleStayPlace < trafficWagon - sitTrWagon) {
+            System.out.println("В вагоне есть " + (sitTrWagon - saleSitPlace) + " сидячих мест, " + ((trafficWagon - sitTrWagon) - saleStayPlace) + " стоячих мест.");
+        }
+        if (saleSitPlace < 60 && saleStayPlace >= trafficWagon - sitTrWagon) {
+                System.out.println("В вагоне есть " + (sitTrWagon - saleSitPlace) + " сидячих мест, " + ((trafficWagon - sitTrWagon) - saleStayPlace) + " стоячих мест.");
+        }
         }
     }

@@ -19,8 +19,8 @@ public class Main {
         System.out.println("Exercise3");
         int trafficWagon = 120;
         int sitTrWagon = 60;
-        int saleSitPlace = 80;
-        int saleStayPlace = 65;
+        int saleSitPlace = 20;
+        int saleStayPlace = 15;
         if (saleSitPlace < 60 && saleStayPlace < trafficWagon - sitTrWagon) {
             System.out.println("В вагоне есть " + (sitTrWagon - saleSitPlace) + " сидячих мест, " + ((trafficWagon - sitTrWagon) - saleStayPlace) + " стоячих мест.");
         }
@@ -47,6 +47,16 @@ public class Main {
         }
         else {
             System.out.println("Если человеку меньше 2 лет и больше 65, ему не нужно ходить на работу или в школу.");
+        }
+        int ageAttr = 30;
+        if (ageAttr > 0 && ageAttr < 5) {
+            System.out.println("Кататься на аттракционах запрещено!");
+        }
+        else if (ageAttr >= 5 && ageAttr < 14) {
+            System.out.println("Кататься на аттракционах можно только в сопровождении взрослого.");
+        }
+        else {
+            System.out.println("Кататься на аттракционах можно самостоятельно.");
         }
         }
     }
